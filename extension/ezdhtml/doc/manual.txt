@@ -1,0 +1,337 @@
+
+		------------------------------------
+		eZ publish online editor user manual
+		------------------------------------
+
+The editor looks like a familiar WYSIWYG word program. Some functions are 
+integrate with eZ publish which we will explain in more detail in this
+manual. No technical experience is needed to use OE.
+
+Using the toolbar
+-----------------
+
+1. Text style
+
+From the dropdown list of the editor, you can choose text style of what you 
+are going to write. The most common style is 'normal' and other six styles 
+the editor supports is from 'heading 1' to 'heading 6'.
+
+2. Redo writing
+
+You can reverse the 'Undo' command by click the 'Redo' button. To reverse 
+more than one 'Undo' action, keep clicking the 'Redo' button.
+
+3. Undo writing
+
+You can reverse the last command or delete last entry you have written by 
+click the 'Undo' button. To reverse more than one action, keep clicking the
+'Undo' button.
+
+4. Bold format
+
+To make selected text bold, simply click on the 'Bold' button. If the 
+selected text is already bold, you can remove the formatting by clicking the 
+'Bold' button.
+
+5. Italic format
+
+To make selected text italic, simply click on the 'Italic' button. If the 
+selected text is already italic, you can remove the formatting by clicking 
+the 'Italic' button.
+
+6. Numbered list
+
+To make paragraphs as numbered list, click on the 'Numbered list' button. To
+continue another numbered paragraph, press 'Enter' and keep writing. Press 
+'Back space' when you want to stop numbered list. You can remove numbered list
+formatting by clicking the 'Numbered list' button if the selected text is 
+already numbered list. You can use 'Increase list indent'/'Decrease list indent' 
+to make nested list.
+
+7. Bullet list
+
+To make paragraphs as bullet list, click on the 'Bullet list' button. To 
+continue another bullet paragraph, press 'Enter' and keep writing. Press 
+'Back space' when you want to stop bullet list. You can remove bullet list
+formatting by click on the 'Bullet list' button if the selected text is 
+already bullet list. You can use 'Increase list indent'/'Decrease list indent' 
+to make nested list.
+
+8. Decrease list indent
+
+This button will be enabled only if you are editing list text. Click on the 
+'Decrease list indent' button to decrease indent for list.
+
+
+9. Increase list indent
+
+This button will be enabled only if you are editing list text. Click on the 
+'Increase list indent' button to increase indent for the list.
+
+
+10. Insert object
+
+   10.1 Insert object
+
+   Before inserting an object, make sure the object is in the list of related
+   objects. Otherwise, you should add the inserting object to related objects
+   list or upload local image/file first.
+       
+       10.1.1. Add an object to the related objects list
+
+       To add an object to the related object list you can press 'Add existing'
+       button in the main content edit window. Then you find the object you want 
+       to add and tick off that object and click 'Select’. Now you will find the 
+       object in the related objects list. You can also press 'Upload new' button
+       to upload a file/image and add it as related object.
+
+       10.1.2. Upload local image/file directly from insert object window.
+       
+       You can upload local image/file from insert object window directly by pressing
+       'Upload new' button, choose a local image/file in the insert object window, 
+       specify the name of the image/file, choose location from list and then click 
+       'OK' button.
+
+       10.1.3  Insert image object
+      
+       When the 'Insert object' button is clicked, a window will pop up where 
+       you can choose an inserting object and specify size, alignment and 
+       class of this object. Custom attributes can be added by clicking 'New attribute' 
+       button. To remove custom attributes, select one or more attributes and then 
+       press 'Remove selected' button. If the object type is an image, the real image 
+       will be inserted into the editor after you have pressed 'OK' button.
+	     
+       10.1.4  Insert general object
+
+       If you have chosen an another type of object, note that attribute size is disabled. 
+       Specify alignment and class of this object. Custom attributes can be added by 
+       clicking 'New attribute' button. To remove custom attributes, select one or more 
+       attributes and then press 'Remove selected' button. An object image 
+       will be inserted into the editor after you have pressed 'OK' button.
+  
+   10.2 Edit object
+      
+       10.2.1  Edit image object
+
+       Move your mouse to the image object, and when a cross double-arrow 
+       appears, click the left button of the mouse and the image will be in a
+       rectangle frame. Click on the 'Insert object' button on the toolbar, 
+       the insert object window will pop up and the editing object is 
+       selected in the related objects list. You can edit the image size, 
+       alignment and class by selecting different value and then click 
+       'OK' button. If no changes need to be done, simply click 'Cancel' 
+       button. 
+	     
+       10.2.2  Edit general object
+
+       Move your mouse to the object, and when a cross double-arrow appears, 
+       click the left button of the mouse and the object will be in a rectangle
+       frame. Click on the 'Insert object' button on the toolbar, the insert 
+       object window will pop up and the editing object is selected in the
+       related objects list. You can edit the object by selecting different attribute
+       values and then click the 'OK' button. If no changes need to be done,
+       simply click 'Cancel' button. 
+
+11. Link
+  
+   11.1 Insert link
+
+   When clicking the 'Insert link' button on the toolbar a window will pop up
+   where you can fill up link text, link url and choose link type or class. If 
+   the checkbox 'Open in new window' is checked, the inserted link will be 
+   showed in a new window when the link is clicked, otherwise, the link will be
+   showed in the parent window. You can also select text in the editor and then 
+   click the 'OK' button. The selected text will then be filled in 
+   'Text' textfield as link text. 
+   
+   11.2 Edit link
+
+   Move the mouse to the link text and click, make sure that the cursor is 
+   inside the link text and click the 'OK' button on the toolbar. After 
+   the insert link window popped up, you can edit the link.
+
+12 Anchors
+   
+   12.1 Insert anchor
+
+   When you click the 'Insert anchor' button, a window will pop up where you can 
+   fill in an anchor name. Click on 'OK' button in this window to
+   insert it, an anchor-like image will be inserted into the editor.
+  
+   12.2 Edit anchor
+
+   Move your mouse to the anchor image object, when a cross double-arrow appears, 
+   click the left button of the mouse. The anchor image will now be in a 
+   rectangle frame. Click on the 'Insert anchor' button in the toolbar and the 
+   insert anchor window will pop up and the anchor name can be changed.
+  
+13 Custom tag
+
+   13.1 Insert custom tag
+
+   If you have already created some custom tags for eZ publish 3, the pop up 
+   window will show a list of all available custom tags when you click on the 
+   'Insert custom tag' button on the toolbar. Select the name of the custom tag
+   you want to insert, checkbox 'Inline' will be checked if the selected custom 
+   tag is of type 'inline', otherwise, the checkbox will not be checked and 
+   textfield 'Text' is disabled. Whether a custom tag is inline or not is 
+   defined in file content.ini under directory settings.Custom attributes can be 
+   added by clicking 'New attribute' button. To remove custom attributes, 
+   select one or more attributes and then press 'Remove selected' button. 
+   Write tag content in textfield 'Text' and click the 'OK' button if the tag is 
+   of type 'inline', a small custom tag icon will be added to the editor. If 
+   selected custom tag is not of type 'inline', simply click 'OK' button and a 
+   single column and single row table with sky-blue background will be added into 
+   the editor field, then you can write tag content inside the table cell.
+
+   13.2 Edit custom tag
+
+   Move your mouse to the custom tag object (table or image), when a cross 
+   double-arrow appears, click the left button of the mouse. The object will 
+   now be in a rectangle frame. Click on the 'Insert custom tag' button in the 
+   toolbar and a window will pop up where you can edit the tag.
+
+14 Literal input
+
+   14.1 Insert literal
+   
+   By clicking the "Insert literal" button, a window will pop up where you can
+   choose 'class' if you have defined available literal classes in content.ini.
+   Click 'OK', a single column and single row table with purple background will 
+   be added into the editor field. In this field, you can write text with tags. 
+   For example, if you want to publish some xml formatted document, write them 
+   inside the purple table and it will show exactly what you have written. You 
+   can also use it as a html code editor by classify it to, for example, 'html' 
+   class, then use eZ publish override system to render it as html code, not 
+   literal text.
+
+   14.2 Edit properties of literal
+
+   Move your mouse to the literal tag object, when a cross double-arrow appears, 
+   click the left button of the mouse. The object (table) will now be in a 
+   rectangle frame. Click on the 'Insert literal' button in the toolbar and a 
+   window will pop up where you can assign it to a different class.
+
+15 Special character
+   
+   By clicking the "Insert special character" button, special character window 
+   will pop up. Simply choose a character and click on it, then the character 
+   will be inserted into the editor.
+
+16 Tables
+
+   16.1 Insert table
+
+   A window will pop up when the 'Insert table' button is clicked. Specify table
+   rows, columns, border, width and class, then click on the 'OK' button. 
+   If the table border is 0, the table will be showed with red border colour.
+
+   16.2 Edit table
+
+	16.2.1 Edit table rows or columns
+
+	Move your mouse to one of the table cells and the 'Insert row', 'Insert 
+        column', 'Delete row' and 'Delete column' buttons on the toolbar will be 
+        activated. By clicking the insert or delete command buttons you can add 
+        rows and columns the way you want. 
+	
+	16.2.2 Split cell
+
+	Move your mouse to the table cell you want to split, 'Split cell' button
+        on the toolbar will be activated. Simply click this button, the cell 
+        will be divided into two cells.
+
+	16.2.3 Merge cells
+
+	Select cells in the same row, when 'Merge cell' button on the toolbar 
+        is activated, click it and all selected cells will be merged into one
+	cell.
+	
+	16.2.4 Edit table properties
+
+	Move the mouse to the table you want to edit and when a cross 
+        double-arrow appears, click the left button of the mouse. The table 
+        will be selected in a rectangle frame. Click the 'Insert table' button 
+        on the toolbar and the insert table window will pop up. Note that only 
+        table border, width and class are activated and can be changed. If no 
+        changes need to be done, simply click 'Cancel' button.
+
+	16.2.5 Remove entire table
+	
+	Move your mouse to the table you want to delete. When a cross 
+        double-arrow appears, click the left button of the mouse and the table 
+        will be selected in a rectangle frame. Then simply press 'Delete' key.
+
+17 Find text
+
+Click 'Find' button on the toolbar, a standard find text window will pop up.
+Note that this button is hidden for mozilla based browsers.
+
+18 Online help
+
+Click 'Help' button on the toolbar, the online help menu will show. 
+
+
+Using the context menu
+----------------------
+
+1. Insert object, link, anchor, literal, custom tag, table.
+
+Right click mouse button and choose one of the insert commands from context 
+menu.
+    
+2. Edit table.
+
+Move mouse to a table cell and right click mouse button and choose command 
+from context menu. You can insert row, insert column, delete row, delete 
+column, split cell or insert object, table, link, anchor, custom tag and 
+literal tag. To set table cell as table header, choosing "TH" from context
+menu; To merge cells in different rows choosing command 'Merge down' from 
+context menu; To edit table cell properties, choosing "Cell Properties" from
+context menu, a window will pop up where you can set cell width and cell 
+class. You can set width and class either to the selected cell, to the same
+row as the selected cell or to the same column as the selected cell by 
+choosing radio button Cell, Row, Column, respectively.
+    
+3. Edit properties of object, anchor, literal, custom tag, table.
+
+Move mouse to the object (image or table), and when a cross double-arrow 
+appears, click the left button of the mouse. The object will be in a 
+rectangle frame. Right click mouse button and choose "Properties" from 
+context menu, the object property window will pop up. Then you can edit 
+properties of the object. If no changes need to be done, simply click 
+'Cancel' button. 
+   
+4. Edit link.
+
+Move mouse to the link text and right click the mouse button. Select 
+"Link properties" from the context menu if you want to edit link properties;
+Select "Remove Link" if you just want to remove the link.
+
+5. Edit class attribute of tag header, bold, italic, ol or ul.
+
+Move mouse to the text and right click the mouse button and choose command 
+"Properties" from the context menu, a window will pop up where you can assign
+class to this tag ( You need to define available classes for this tag in 
+content.ini ).
+
+
+Tips
+----
+  
+1. You can add a paragraph by pressing 'Enter'.
+
+2. You can add a line break by holding the Shift key down and type 'Enter'.
+
+3. The status bar will show the current tag name, all its parent tags and 
+   class information of the tag.
+
+4. You can make image as link by selecting the image first and then either
+   clicking the link button in the toolbar or choose command "Insert Link" 
+   from context menu.
+
+5. You can change the view of editor by editing editor.css under directory 
+   extension/ezdhtml/design/standard/stylesheets/ezdhtml/.
+
+6. You can edit wordmatch.ini under directory extension/ezdhtml/settings/ 
+   to make text copied from word directly assigned to desired class.

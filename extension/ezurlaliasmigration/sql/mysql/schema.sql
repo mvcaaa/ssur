@@ -1,0 +1,28 @@
+CREATE TABLE `ezurlalias_ml_migrate` (
+  `id` int(11) NOT NULL default '0',
+  `link` int(11) NOT NULL default '0',
+  `parent` int(11) NOT NULL default '0',
+  `lang_mask` int(11) NOT NULL default '0',
+  `text` longtext NOT NULL,
+  `text_md5` varchar(32) NOT NULL default '',
+  `action` longtext NOT NULL,
+  `action_type` varchar(32) NOT NULL default '',
+  `is_original` int(11) NOT NULL default '0',
+  `is_alias` int(11) NOT NULL default '0',
+  `is_restored` int(11) NOT NULL default '0',
+  `lang_mask_adjusted` int(11) NOT NULL default '0',
+  `alias_redirects` int(11) NOT NULL default '1',
+  `extra_data` longtext,
+  PRIMARY KEY  (`parent`,`text_md5`),
+  KEY `ezurlalias_ml_migrate_act_org` (`action`(32),`is_original`),
+  KEY `ezurlalias_ml_migrate_action` (`action`(32),`id`,`link`),
+  KEY `ezurlalias_ml_migrate_actt` (`action_type`),
+  KEY `ezurlalias_ml_migrate_actt_org_al` (`action_type`,`is_original`,`is_alias`),
+  KEY `ezurlalias_ml_migrate_id` (`id`),
+  KEY `ezurlalias_ml_migrate_par_act_id_lnk` (`parent`,`action`(32),`id`,`link`),
+  KEY `ezurlalias_ml_migrate_par_lnk_txt` (`parent`,`link`,`text`(32)),
+  KEY `ezurlalias_ml_migrate_par_txt` (`parent`,`text`(32)),
+  KEY `ezurlalias_ml_migrate_text` (`text`(32),`id`,`link`),
+  KEY `ezurlalias_ml_migrate_text_lang` (`text`(32),`lang_mask`,`parent`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

@@ -1,0 +1,22 @@
+div.context-menu 
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #000077;
+  padding: 2px;
+  background-color: buttonface;
+  cursor: default;
+}
+
+div.context-menu tr.separator td 
+{
+  padding: 2px 0px;
+  border-top: 1px solid #102244;
+}
+
+div.context-menu tr.menu-item.hover 
+{
+  background-color: #316ac5;
+  color: #fff;
+}

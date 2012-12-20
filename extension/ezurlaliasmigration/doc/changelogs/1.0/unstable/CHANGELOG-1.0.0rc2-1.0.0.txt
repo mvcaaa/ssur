@@ -1,0 +1,10 @@
+Changes from 1.0.0rc2 to 1.0.0
+==============================
+
+Summary of changes from the version 1.0.0rc, which was shipped with eZ Publish
+4.0.1rc2.
+
+Bugs
+----
+
+- Fixed bug #13475: global aliases aren't restored when migrating url aliases in 4.0.1rc2

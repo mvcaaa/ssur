@@ -1,0 +1,69 @@
+# Copy this file to a new file called .htaccess in your eZ Publish root
+# to make the site more secure in non-virtualhost mode (index.php used in urls).
+#
+
+php_value allow_call_time_pass_reference 0
+
+#<FilesMatch ".">
+#order allow,deny
+#deny from all
+#</FilesMatch>
+
+#<FilesMatch "(index\.php|\.(gif|jpe?g|png|css|js|html)|var(.+)storage.pdf(.+)\.pdf)$">
+#order allow,deny
+#allow from all
+#</FilesMatch>
+addType application/x-javascript .js
+
+# If you see "Forbidden" when trying to access root page of your site
+# without 'index.php' appended, uncomment the following "Files" section.
+# NOTE: replace "ezpublish-3.6.0" with base name of the directory
+# where your eZ Publish intallation resides.
+# e.g. base name of "/sites/ezpublish/ezpublish-3.6.0" is "ezpublish-3.6.0".
+
+#<Files "ezpublish-3.6.0">
+#   order allow,deny
+#   allow from all
+#</Files>
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteRule ^extension/dynamicdebug/design/standard/js/dynamicdebug.js - [L]
+RewriteRule !\.(gif|jpe?g|png|css|js|jar|html)|var(.+)storage.pdf(.+)\.pdf?$ - [C] 
+RewriteCond %{HTTP_HOST} ^webdav\..* 
+RewriteRule ^(.*) webdav.php [L] 
+RewriteCond %{HTTP_HOST} ^soap\..* 
+RewriteRule ^(.*) soap.php [L] 
+RewriteRule ^var/cache/debug.html.* - [L] 
+RewriteRule ^var/[^/]+/cache/debug.html.* - [L] 
+RewriteRule ^/var/([^/]+/)?cache/public/.* - [L]
+Rewriterule ^var/storage/.* - [L] 
+Rewriterule ^var/ezwebin_site/.* - [L] 
+Rewriterule ^doc/.* - [L] 
+Rewriterule ^community/.* - [L] 
+Rewriterule ^static/.* - [L] 
+Rewriterule ^var/[^/]+/storage/.* - [L] 
+RewriteRule ^var/cache/texttoimage/.* - [L] 
+RewriteRule ^var/[^/]+/cache/texttoimage/.* - [L] 
+Rewriterule ^var/russ/.* - [L]
+Rewriterule ^design/[^/]+/(stylesheets|images|javascript)/.* - [L] 
+Rewriterule ^share/icons/.* - [L] 
+RewriteRule ^extension/ezdhtml/.* - [L]
+Rewriterule ^extension/[^/]+/design/[^/]+/(stylesheets|images|javascripts?)/.* - [L] 
+Rewriterule ^extension/[^/]+/design/[^/]+/(stylesheets|js|images|javascripts?)/.* - [L] 
+Rewriterule ^extension/ezvideoflv/design/standard/flash/player_flv_maxi.swf - [L]
+RewriteRule ^robots\.txt$ robots.txt [L]
+RewriteRule ^sitemap\.xml\.gz$ sitemap.xml.gz [L]
+RewriteRule ^sape\.txt$ sape.txt [L]
+RewriteRule ^rss/feed/yandex.rss$ yrss/feed/yandex.rss [L]
+RewriteRule content/treemenu/?$ index_treemenu.php
+RewriteRule index_treemenu.php - [L]
+RewriteRule !\.(gif|jpe?g|png|css|js|html)|var(.+)storage.pdf(.+)\.pdf$ index.php
+
+#RewriteCond %{HTTP_REFERER} magazines\.russ\.ru.* [NC,OR]
+#RewriteCond %{REQUEST_URI} workbooks$ [NC,OR]
+#RewriteRule .*x http://www.russ.ru [R,L]
+
+RewriteRule .* index.php [L]
+
+#DirectoryIndex index.php

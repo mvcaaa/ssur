@@ -1,0 +1,34 @@
+
+Changes from 4.1.5 to 4.2
+---------------------------
+
+*Support for eZ Publish 3.9 new features:
+
+- Support for custom attributes in all tags.
+  (see doc/features/3.9/xml_custom_attributes.txt)
+- Support for advanced related objects.
+  (see doc/features/3.9/xml_related_objects.txt)
+- Support for 'view' parameter in links.
+  (see doc/features/3.9/xml_new_features.txt)
+  
+*Bugfixes:
+
+- Fixed bug #9315: Text entered into OE is lost with Firefox 2.0.
+- Fixed bug #009324: Object relation fails in OE 4.2.a with eZ 3.9.0.beta1.
+- Fixed bug #008928: Cannot break/continue 1 level.
+- Fixed bug #009351: Medium Embedded Image Not shown on User Side 4.1.5.
+- Fixed bug #009115: Link with urlencoded umlaut doesn't work.
+- Fixed: invalid HTML in main edit template.
+
+*New features:
+
+- Added setting: ezdhtml.ini:[SystemSettings].RelativeURL
+  Enables relative URLs (without host name) inside the editor.
+  (related to bug #009663: wrong path to object_insert.png)
+- Implemented: the default value of 'size' parameter in 'Insert object' dialog
+  is defined by eZ Publish setting:
+  content.ini:[ImageSettings].DefaultEmbedAlias
+  
+*Updates:
+  
+- Updated: Italian translation.

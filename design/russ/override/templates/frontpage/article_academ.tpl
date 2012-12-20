@@ -1,0 +1,70 @@
+{*?template charset="koi8-r"?*}
+{* Article on frontpage - Line view *}
+{*
+ Академическая страница в правой колонке
+*}
+{default image_class=articleimage 
+ 		 annotation_limit = 100
+		 title=$node.data_map.title.content|wash
+}
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+{if $title}
+<!-- 	<h2><a href={$node.url_alias|ezurl}>{$title}</a></h2> -->
+{/if}
+	
+
+	{section show=$node.data_map.person.content|false()}
+	<div class="attribute-byline">
+{*	<p class="author">
+		{attribute_view_gui attribute=$node.data_map.person}
+	</p>
+	<p class="date">
+		{$node.object.published|l10n(date)}
+	</p>
+*}	</div>
+	{/section}
+
+	{def $person=$node.data_map.person
+	     $image=$node.data_map.image
+	}
+
+{if $node.node_id|eq(111607)}
+{* $image.content | attribute(show, 1) *}
+{/if}
+        {section show=$image.has_content}
+        <div class="attribute-image">
+            {attribute_view_gui image_class=$image_class href=$node.url_alias|ezurl attribute=$image}
+        </div>
+        {/section}
+
+
+
+{* TOPICs *}
+{def $topics=fetch( 'content', 'reverse_related_objects', hash( 'object_id', $node.object.id) )}
+		{* <!-- , 'attribute_identifier', 'Topic' | , 'all_relations', true()  --> *}
+		{* $related_objects|attribute( show, 1 ) *}
+{def $topic=0}
+{foreach $topics as $topic}
+{if eq($topic.class_name,'Topic')}
+	{break}
+{/if}
+{/foreach}
+{* $topic|attribute(show, 1) *}
+
+	{if $topic|false()}
+    <div class="attribute-topic">
+	Тема: {content_view_gui view=embed-inline content_object=$topic}
+	</div>
+	{/if}
+	
+    {section show=$node.data_map.intro.content.is_empty|not|false()}
+    <div class="attribute-short float-break">
+        {attribute_view_gui attribute=$node.data_map.intro}
+{*	<p class="linkmore"><a href={$node.url_alias|ezurl}>читать далее&nbsp;&raquo;</a></p> *}
+    </div>
+    {/section}
+
+    </div>
+</div>

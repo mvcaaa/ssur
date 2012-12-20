@@ -1,0 +1,12 @@
+
+Changes from 4.2a to 4.2rc
+---------------------------
+
+- Fixed bug: custom attributes for 'embed-inline' do not appear in the dialog.
+- Fixed bug: fatal error on the broken input in some cases.
+- Fixed bug #009324: Object relation fails in OE 4.2.a with eZ 3.9.0.beta1.
+- Fixed bug #008928: Cannot break/continue 1 level.
+- Fixed bug #009351: Medium Embedded Image Not shown on User Side 4.1.5.
+- Fixed bug #009115: Link with urlencoded umlaut doesn't work.
+- Fixed: invalid HTML in main edit template.
+- Fixed bug: template error in anchor properties.

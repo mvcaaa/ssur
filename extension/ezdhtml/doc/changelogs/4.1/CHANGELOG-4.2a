@@ -1,0 +1,12 @@
+
+Changes from 4.1.4 to 4.2a
+---------------------------
+
+- Support for custom attributes in all tags.
+  (see doc/features/3.9/xml_custom_attributes.txt)
+  
+- Support for advanced related objects.
+  (see doc/features/3.9/xml_related_objects.txt)
+  
+- Support for 'view' parameter in links.
+  (see doc/features/3.9/xml_new_features.txt)

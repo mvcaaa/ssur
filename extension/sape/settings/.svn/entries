@@ -1,0 +1,53 @@
+8
+
+dir
+10
+svn+ssh://svn@195.230.90.50/home/svn/russ/trunk/DocumentRoot/extension/sape/settings
+svn+ssh://svn@195.230.90.50/home/svn/russ
+
+
+
+2009-10-27T15:56:04.520308Z
+10
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e3eaa393-90a3-4643-a63c-d4da2c602616
+
+sape.ini
+file
+
+
+
+
+2009-10-27T16:01:41.000000Z
+a4728883f544d8107e1139d78f12397e
+2009-10-27T15:56:04.520308Z
+10
+svn
+has-props
+
+site.ini.append
+file
+
+
+
+
+2009-10-24T18:36:24.000000Z
+506d9a9a7005e3f24ce39e28583da322
+2009-10-24T18:35:15.488508Z
+8
+svn
+

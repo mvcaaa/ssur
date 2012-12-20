@@ -1,0 +1,254 @@
+body
+{
+    background-color: #ecece4;
+    margin: 0;
+    padding: 1em;
+    padding-bottom: 100px;
+}
+
+table.characterTable
+{ 
+     cursor: pointer;
+}
+
+td.title
+{
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+}
+
+td.body
+{
+    padding-bottom: 0.5em;
+}
+
+td.character
+{
+    color: #000000;
+    font-size: 14px;
+    padding-bottom: 0.1em;
+    padding-top: 0.3em;
+}
+
+td.selectedCharacter
+{
+    color: #000000;
+    font-size: 14px;
+    background-color: #ffac00;
+}
+
+td.fieldset
+{
+    color: #000000;
+    padding-bottom: 0.5em;
+}
+
+td.fieldsetlabel
+{
+    color: #000000;
+}
+
+td.label
+{
+    font-weight: bold;
+}
+
+td.warning
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4d739a;
+}
+
+td.helptitle
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+td.helpbody
+{
+    padding-bottom: 0.5em;
+}
+
+td.helptext
+{
+}
+
+td.helpsubtitle
+{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+td.contextmenutitle
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+td.contextmenutext
+{
+    padding-bottom: 0.5em;
+}
+
+td.helptips
+{
+    font-style: italic;
+    padding-bottom: 0.5em;
+}
+
+input.checkbox
+{
+    margin-right: 4px;
+}
+
+input.radio
+{
+    margin-right: 4px;
+}
+
+table.propertyTable
+{ 
+    border: 1px solid #4d739a;
+}
+
+table.propertyTable th
+{
+    color: #254b71;
+    background-color: #b5bec7;
+    border: 1px solid #4d739a;
+    padding: 0.2em;
+    text-align: center;
+}
+
+table.propertyTable td
+{
+    border: 1px solid #4d739a;
+    color: #000000;
+    text-align: left;
+    padding-left: 0.3em;
+}
+
+table.propertyTable td.name
+{
+    font-weight: bold;
+}
+
+table.propertyTable td.visiable
+{
+    visibility: visible;
+}
+
+table.propertyTable td.invisiable
+{
+    visibility: hidden;
+}
+
+input.unselected
+{
+}
+
+input.selected
+{
+    background-color: #b5bec7;
+    border: 2px solid #ff0000;
+}
+
+/* New styles*/
+
+div.onlineeditor
+{
+}
+
+div.onlineeditor dt
+{
+    height: 16px;
+    margin-bottom: -16px;
+}
+
+div.onlineeditor h1
+{
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #898985;
+    padding: 0.25em;
+}
+
+div.onlineeditor h2
+{
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #b0b0ab;
+    padding: 0.25em;
+}
+
+div.onlineeditor fieldset h2
+{
+    color: #898985;
+    background-color: transparent;
+    padding: 0;
+}
+
+div.message-warning h2
+{
+    font-size: 1.4em;
+    color: #000000;
+    background-color: transparent;
+    margin-left: 0.5em;
+    padding: 0.25em 0.5em 0.5em 2.5em;
+}
+
+div.onlineeditor input.button, div.onlineeditor button
+{
+    margin: 0.5em 0.25em 0 0;
+}
+
+div.displaycharacter
+{
+    float: left;
+    text-align: center;
+    color: #4d739a;
+    background-color: #fefefb;
+    font-size: 2em;
+    width: 30px;
+    margin: 0.1em 0.25em 0 0;
+    padding: 0.25em;
+}
+
+div.onlineeditor button
+{
+    font-size: 1em;
+}
+
+div.onlineeditor fieldset
+{
+    margin: 0.5em 0 0.5em 0;
+}
+
+div.onlineeditor table
+{
+    margin: 0.25em 0 0.25em 0;
+}
+
+div#maincontent
+{
+    margin: 0;
+}
+
+ul.oe-bookmarks
+{
+    margin: 0;
+    padding: 0.5em 0 0.25em 0;
+}
+
+ul.oe-bookmarks li
+{
+    list-style-type: none;   
+}
+
+ul.oe-bookmarks li input, ul.oe-bookmarks li img
+{
+    vertical-align: middle;
+}

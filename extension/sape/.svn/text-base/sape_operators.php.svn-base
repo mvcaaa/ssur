@@ -1,0 +1,98 @@
+<?php
+
+/*!
+ \class   TemplateSape_Operators sape_operator
+ \ingroup eZTemplateOperators
+ \brief   Handles sape template operator s
+
+ \version 1.0
+ \date    24/10/2019 20:27:40
+ \author  Andrey Astashov mvc.aaa@gmail.com
+
+
+
+ Example:
+ \code
+ {sape_links('5')|wash}
+ \endcode
+
+ \code
+ {$string|sape_context('$number')}
+ \endcode
+
+ */
+
+include_once( "lib/ezutils/classes/ezini.php" );
+
+class TemplateSape_Operators 
+{
+	/*!
+	 Constructor, does nothing by default.
+	 */
+	function TemplateSape_Operators()
+	{
+	}
+
+	/*!
+	 \return an array with the template operator name.
+	 */
+	function operatorList()
+	{
+		return array('sape_context','sape_links');
+	}
+
+	/*!
+	 \return true to tell the template engine that the parameter list exists per operator type,
+	 this is needed for operator classes that have multiple operators.
+	 */
+	function namedParameterPerOperator()
+	{
+		return true;
+	}
+
+	/*!
+	 See eZTemplateOperator::namedParameterList
+	 */
+	function namedParameterList()
+	{
+		return array( 'sape_context' => array( 'count' => array( 'type' => 'integer',  'required' =>false, 'default'=>0  )),
+                     					 'sape_links' => array( 'count' => array( 'type' => 'integer',  'required' =>false, 'default'=>0  ) ));
+	}
+
+	/*!
+	 Executes the PHP function for the operator cleanup and modifies \a $operatorValue.
+	 */
+	function modify( $tpl, $operatorName, $operatorParameters, $rootNamespace, $currentNamespace, &$operatorValue, $namedParameters, $placement )
+	{
+		$count = $namedParameters['count'];
+		$ini =& eZINI::instance('sape.ini');
+		$sape_user = $ini->variable( 'sape', 'sape_user' );
+		$sape_charset = $ini->variable('sape', 'sape_charset');
+		 
+		// 	SAPE  system init start
+		if (!defined('_SAPE_USER')){
+			define('_SAPE_USER', $sape_user);
+		}
+		 require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php');
+		 $o['charset'] = $sape_charset;
+		 $o['force_show_code'] = $ini->variable('sape', 'sape_force_show_code');
+		 $o['debug'] = $ini->variable('sape', 'sape_debug');
+		 switch( $operatorName )
+		 {
+		 	case 'sape_links':
+		 		{
+		 			$sape = new SAPE_client($o);
+		 			if (!$count) $count = $ini->variable('sape', 'sape_links_defaultCount');
+		 			$operatorValue = $sape->return_links($count);
+		 		} break;
+		 	case 'sape_context':
+		 		{
+		 			if (!$count) $count = $ini->variable('sape', 'sape_context_defaultCount');
+		 			$sape = new SAPE_context($o);
+		 			$operatorValue = $sape->replace_in_text_segment($operatorValue);
+		 		} break;
+		 }
+
+}
+
+}

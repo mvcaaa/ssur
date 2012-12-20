@@ -1,0 +1,46 @@
+8
+
+dir
+10
+svn+ssh://svn@195.230.90.50/home/svn/russ/trunk/DocumentRoot/extension/sape
+svn+ssh://svn@195.230.90.50/home/svn/russ
+
+
+
+2009-10-27T15:56:04.520308Z
+10
+svn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e3eaa393-90a3-4643-a63c-d4da2c602616
+
+settings
+dir
+
+autoloads
+dir
+
+sape_operators.php
+file
+
+
+
+
+2009-10-27T16:01:41.000000Z
+10103793684867e4a67b20f0da60807d
+2009-10-27T15:55:28.519813Z
+9
+svn
+

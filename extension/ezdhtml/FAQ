@@ -1,0 +1,86 @@
+eZ Online Editor extension 4.3.1 FAQ
+
+1. eZ Online Editor is not activated in eZ publish
+==================================================
+
+You will need to check if the extension is properly activated in site.ini.
+Open 'settings/override/site.ini.append(.php)' and find the 'ExtensionSettings'
+section. Under it you should have an entry that says:
+
+ActiveExtensions[]=ezdhtml
+
+Make sure there are no spaces before or after the name.
+
+You should also consider checking the debug output of eZ publish to see what is
+going wrong.
+
+
+2. After installation, I only get Disable editor/Enable editor button when
+   editing an article, no any other changes.
+==========================================================================
+
+A. Make sure you have correct apache rewrite rule. Have you restarted apache
+   after changes?
+
+   Example of the rewrite rule for Apache:
+   Rewriterule ^/extension/[^/]+/design/[^/]+/(stylesheets|images|javascripts?)/.* - [L]
+
+B. Make sure you are using one of the following web browsers: 
+   Internet Explorer 5.5 or higher, 
+   Mozilla 1.3 or higher, 
+   Firefox 1.0 or higher, 
+   Netscape 7.x or higher.
+     
+   (It is always recommended to use the latest available version of the browser)
+   
+   Make sure that Javascript support is enabled in your web browser.
+
+
+3. After installation, I see nothing have been changed when editing an article.
+===============================================================================
+
+A. Check your installation path. The correct path should like following:
+   eZpublish Root  - kernel
+                   - lib
+                   - doc
+                   - bin
+                   - design
+                   - ...
+                   - extension - ezdhtml - modules
+                                         - design
+                                         - ezxmltext
+                                         - settings
+                                         - ...
+B. Have you changed  ActiveExtensions[] to ActiveExtensions[]=ezdhtml
+   in site.ini?
+
+C. Make sure you have cleared all the caches (both eZ publish and browser).
+
+
+4. When I insert an image into the editor, it does not show the real image, but
+   only an icon.
+===============================================================================
+
+Check the 'extension/ezdhtml/settings/site.ini.append.php' file, find line
+
+ImageClassID[]=your_image_class_id
+
+under [MediaClassSettings]. Is the image class id correct?
+
+Note: The ImageClassID setting is deprecated. Use the ImageClassIdentifiers
+   setting instead in the same [MediaClassSettings] section.
+
+
+5. When I insert an image into the editor, it disappears after storing.
+=======================================================================
+
+Are you trying to insert image right before or after heading?
+Note that images/objects can't be saved in the same line as heading.
+
+
+6. I click right mouse button on the selection, but see no 'Properties' there.
+==============================================================================
+
+To view element's properties you should not select anything, just place the
+cursor inside it's inner text and right-click there.
+

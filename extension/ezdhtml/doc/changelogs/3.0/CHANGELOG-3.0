@@ -1,0 +1,49 @@
+
+Changes from 2.0 to 3.0
+--------------------------
+
+-- Added support for new tag <embed> comes from eZ publish 3.6.
+
+-- Support new protocols 'ezobject://' and 'eznode://' in href attribute for
+   link and embed tag.
+
+-- Added browse function to find interal object/node for link inserting.
+
+-- Fixed bug of internel links ( type "other" ) will be changed to type "http" 
+   when edit a link in Mozilla browser.
+
+-- Fixed bug of links with brackets can not be saved correctly in Mozilla browser.
+
+-- Fixed bug #6015: Â pasted into literal text areas.
+
+-- Fixed bug #6014: Image alias is not created for non-OE inserted images.
+
+-- Fixed bug #6087: OE doesn't remove paragraph tag if xml textfield empty.
+
+-- Fixed bug #6183: Different header levels doesn't work in a table.
+
+-- Fixed bug #6473: Heading levels doesn't work inside custom tags.
+
+-- Fixed bug #6392: Custom tag attributes DO NOT SAVE in Mozilla.
+
+-- Fixed bug #6297: Upload from OE using own UploadSettings.
+
+-- Fixed bug #6226: Insert image attribute isn't stored.
+
+-- Fixed bug #6475: Custom tag choice does not reflect in the custom tag pop-up.
+
+-- Added browse function to find related objects for object inserting.
+
+-- Added function to show link url in statusbar when cursor points to a link.
+
+-- Fixed bug of absolute URL shows with site prefix in popup window in Mozilla browser.
+
+-- Fixed bug #6099: OE causes crash in XML library.
+
+-- Added function to show object ID in statusbar when cursor points to a object.
+
+-- Fixed bug of links might be erased when disable/enable editor several times.
+
+-- Fixed bug #6294: Redirect when discarding object is wrong.
+
+-- Fixed bug of double link will be added when editing object links in Mozilla browser.

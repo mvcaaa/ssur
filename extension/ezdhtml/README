@@ -1,0 +1,83 @@
+eZ Online Editor extension 4.3.1 README
+
+What is the eZ Online Editor extension?
+=======================================
+
+eZ publish Online Editor for XML fields.
+
+
+eZ Online Editor version
+========================
+
+The current version of eZ Online Editor is 4.3.1.
+You can find details about changes for this version in
+doc/changelogs/CHANGELOG-4.3.1
+
+
+License
+=======
+
+This software is licensed under the eZ Proprietary License. The complete
+license agreement is included in the LICENSE file. For more information
+or questions please contact info@ez.no
+
+
+Requirements
+============
+
+The following requirements exists for using eZ Online Editor extension:
+
+o  eZ publish version:
+
+   Make sure you use eZ publish version 3.5 or higher.
+
+o  PHP version:
+
+   as indicated in your eZ publish version requirements
+
+o  Web Browser:
+
+   Make sure you have one of the following web browsers:
+   Internet Explorer 5.5 or higher, 
+   Mozilla 1.3 or higher,
+   Firefox 1.0 or higher, 
+   Netscape 7.x or higher.
+   
+   Make sure that Javascript support is enabled in your web browser.
+
+Installation
+============
+
+Please read the INSTALL file for installation instructions.
+
+
+Where to get more help
+======================
+
+Quick tour: http://ez.no/products/online_editor/online_editor
+Documentation: http://ez.no/doc/extensions/online_editor
+eZ publish forums: http://ez.no/community/forum
+
+
+Live demo of eZ publish Online Editor
+=====================================
+
+http://admindevel.ezpublish.no/
+Login with 'admin' as username and 'publish' as password.
+
+
+Troubleshooting
+===============
+
+1. Read the FAQ
+   ------------
+
+   Some problems are more common than others. The most common ones are listed
+   in the FAQ file.
+
+2. Support
+   -------
+
+   If you have find any problems not handled by this document or the FAQ you
+   can contact eZ system trough the support system:
+   http://ez.no/services/support

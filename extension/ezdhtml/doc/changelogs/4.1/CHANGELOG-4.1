@@ -1,0 +1,25 @@
+
+Changes from 4.0.4 to 4.1
+---------------------------
+
+*Changes related to eZ publish 3.8:
+
+- Added support for "embed-inline' tag.
+- Added support for inline content inside headers.
+  (including text styles, links, embedded objects, custom inline tags)
+- Added support for new settings:
+      ezxml.ini:[InputSettings].TrimSpaces
+      ezxml.ini:[InputSettings].AllowMultipleSpaces
+  (see 3.8 new features documentation for details)
+- Added support for empty paragraphs.
+- Added setting for anchors inside headers (see bug #8269):
+      content.ini:[header].AnchorAsAttribute
+      
+*Changes related to all supported eZ publish versions:
+
+- Added option to create new uploaded objects under the current object.
+  (available only when the object is published)
+  
+- Fixed bug #8264: Online Editor for Mozilla wrongly converts brackets in links.
+- Fixed bug #8017: First custom tag has always the type "block".
+- Fixed bug #8269: Anchors disappearing in OE when next to headers.

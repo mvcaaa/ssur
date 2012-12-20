@@ -1,0 +1,21 @@
+eZ Publish url migration install instructions
+=============================================
+
+This extensions requires:
+
+- PHP 5 version: 4.0.1 and higher
+- PHP 4 version: 3.10.1
+
+Database schema:
+
+The database schema in extension/ezurlaliasmigration/sql/<db-name> must also
+be inserted in the database being used. The cli-script and the GUI, also helps
+you to create this table for you.
+
+To activate the extension, put it into the extension-folder, and add it to the
+site.ini.append.php in settings/override, or use Setup - Extension in the
+administration interface to activate it.
+
+On eZ Publish 4.0.1, the autoload arrays must be updated for extensions,
+either by invoking the bin/php/ezpgenerateautoloads.php script or via the
+administration interface.

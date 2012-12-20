@@ -1,0 +1,47 @@
+{*?template charset="koi8-r"?*}{* 
+ Articles on Morda in Center Column, derived from 'Article - Line view'
+ included from morda/folder.tpl
+ uses node
+
+ for video
+ *}
+<div class="content-view-onmorda">
+    <div class="class-article">
+{* $node.object | attribute( show, 1 ) *}
+
+{section show=$node.contentobject_is_published}
+
+{* TOPICs *}
+{def $reverse_related_objects_count=fetch( 'content', 'reverse_related_objects_count', hash( 'object_id', $node.object.id ) )} 
+
+{* <!-- , 'attribute_identifier', 'Topic' | , 'all_relations', true()  --> *}
+
+{* $related_objects.0 | attribute( show, 1 ) *}
+{* $related_objects|count() *}
+
+<div class="bl">
+{section show=false()}
+	<div class="date">{$node.object.published|l10n(date)} | {$node.object.published|l10n("shorttime")}</div>
+{/section}
+	{section show=$reverse_related_objects_count}
+	{def $reverse_related_objects=fetch( 'content', 'reverse_related_objects', hash( 'object_id', $node.object.id) )}
+	<div class="topic">Тема: <span class="topic-title">{section loop=$reverse_related_objects var=$related_object}{section-exclude match=ne($related_object.class_name,'Topic')}{content_view_gui view=embed-inline content_object=$related_object}{delimiter},{/delimiter}{/section}</span>
+	</div>
+	{/section}
+	
+	<div class="hdr"><a href={$node.url_alias|ezurl}>{$node.object.data_map.title.content|wash}</a></div>
+    {section show=$node.object.data_map.intro.content.is_empty|not}
+    <div class="anno">
+        {attribute_view_gui attribute=$node.object.data_map.intro}
+    </div>
+    {/section}
+	{section show=$node.object.data_map.person.content}
+	<div class="author">{attribute_view_gui attribute=$node.object.data_map.person}</div>
+	{/section}
+{*	<div class="comments"><a href="{$node.url_alias|ezurl('no')}#comments">комментировать</a></div> *}
+</div>
+{* <hr class=hr2> *}
+{/section}
+
+    </div>
+</div>

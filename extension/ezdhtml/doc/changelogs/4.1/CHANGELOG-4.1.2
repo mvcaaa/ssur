@@ -1,0 +1,28 @@
+
+Changes from 4.1.1 to 4.1.2
+---------------------------
+
+- Implemented suggestion #8571: Inline checkbox and embed inline problems.
+  Added setting:
+    site.ini:[EmbedViewModeSettings].InlineViewModes
+  It contains a list of object's views that are "inline". (i.e. can be rendered
+  inside paragraph)
+  "Inline" checkbox of the "Insert Object" dialog is readonly now and it's
+  value is determined automatically by this setting.
+  
+- The view selected by default in "Insert object" dialog is now the first element
+  of AvailableViewModes list
+  (setting site.ini:[EmbedViewModeSettings].AvailableViewModes).
+
+- Performance improvements: no more slowdowns on large documents.
+- Added possibility to give names to objects created from uploaded files.
+  (available only with eZ publish 3.8.2 or higher)
+- Fixed problem with determining host name on some configurations.
+- Fixed bug #2549: Folders list in file uploading dialog contains wrong items.
+- Fixed bug #8464: Image in Original size wont show in the editor.
+- Fixed bug #8136: CSS annoyances.
+- Fixed bug #8708: Another problem with strong and emphasize ezxmltags.
+- Implemented enhancement #8623: INI setting to define the characters in the
+  "insert special character" dialog. (by Kristof Coomans)
+- Added: Croatian translation.
+- Updated: Spanish and Catalan translations.

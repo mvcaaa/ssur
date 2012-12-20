@@ -1,0 +1,74 @@
+
+/* Online Editor's CSS for visualization of custom tags and elements' classes.
+   See content.ini for the list of available custom tags and classes.
+   
+   CSS rules for visualization of eZXML elements':
+   
+   'paragraph'        :   p.<class name>
+   'header'           :   h1.<class name>  (also h2, h3 etc..)
+   'table'            :   table.<class name>
+   'td', 'th'         :   td.<class name>, th.<class name>
+   'ol', 'ul'         :   ol.<class name>, ul.<class name>
+   'link'             :   a.<class name>
+   'strong'           :   b.<class name>
+                          strong.<class name>
+   'emphasize'        :   i.<class name>
+                          em.<class name>
+   'object', 'embed'  :   img.<class name>
+   'literal'          :   table.literal
+   'literal' classes  :   table.literal td.<class name>
+   
+   CSS rules for visualization of 'custom' tags:
+   
+   all 'custom' block tags  :   table.custom
+   'custom' block tag       :   table.custom td.<custom tag name>
+   'custom' inline tag      :   span.<custom tag name>   
+
+*/
+
+
+/* Visualisation of default inline custom tags */
+
+span.sub
+{
+  vertical-align: sub;
+  font-size: 0.8em;
+}
+
+span.sup
+{
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+span.strike
+{
+  text-decoration: line-through;
+}
+
+
+/* Block custom tags */
+
+table.custom
+{
+  background-color: #ccffff;
+}
+
+
+/* Literal tag */
+
+table.literal
+{
+  background-color: #ccccff;
+}
+
+
+/* Example of class visualization for paragraph element:
+   red background and center-aligned text. */
+
+p.pRed
+{
+   background-color: red;
+   text-align: center;
+}
+

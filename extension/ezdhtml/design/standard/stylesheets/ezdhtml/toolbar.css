@@ -1,0 +1,115 @@
+.toolbar 
+{
+	cursor:default;
+        background-color:buttonface;
+}
+
+.td
+{
+	font-size: 12px;
+        font-weight: bold;
+	font-family: Sans-serif, Verdana, Geneva, Arial, Helvetica,;
+}
+
+.toolbarSection
+{ 
+        width: auto;
+}
+
+
+.statusbar 
+{
+	cursor:default;
+        background-color:buttonface;
+}
+
+.editorName
+{
+	font-size: 12px;
+        font-weight: bold;
+	font-family: Sans-serif, Verdana, Geneva, Arial, Helvetica,;
+        color: #000077;
+}
+.statusbarTD
+{
+	font-size: 12px;
+	font-family: Sans-serif, Verdana, Geneva, Arial, Helvetica,;
+        color: #000000;
+}
+
+.textfield
+{
+	cursor:default;
+	background-color:buttonface;
+	margin-bottom:1px;
+}
+
+.toolbarButton
+{
+	cursor:default;
+        /*background-color:buttonface;*/
+        background-color: #b2c0ce;
+	/*border-style:solid;*/
+	border-width:1px;
+        width: 24px;
+        height: 24px;
+	/*border-background:buttonface;*/
+}
+
+.toolbarButtonSelected
+{
+	cursor:default;
+	background-color:buttonhighlight;
+	border-style:inset;
+	border-width:2px;
+        width: 24px;
+        height: 24px;
+}
+
+.toolbarButtonOverSelected
+{
+	background-color: #ffffff;
+	border-width:1px;
+        width: 24px;
+        height: 24px;
+	border: #f08c00 2px solid;
+}
+
+.toolbarButtonOver
+{
+	background-color: #ffffff;
+	border-width:1px;
+        width: 24px;
+        height: 24px;
+	border: #f08c00 2px solid;
+}
+
+.toolbarButtonOut
+{
+        width: 24px;
+        height: 24px;
+        cursor:default;
+	background-color: #b2c0ce;
+	border-width:1px;
+      
+}
+
+.toolbarButtonDisabled
+{
+	cursor:default;
+        background-color:buttonface;
+	border-width:1px;
+        width: 24px;
+        height: 24px;
+        -moz-opacity: 0.4;	
+}
+
+/*
+SELECT, OPTION{
+        font-family:MS SANS SERIF;
+        font-size:8pt;
+        letter-spacing:-0.5pt;
+}
+
+
+*/

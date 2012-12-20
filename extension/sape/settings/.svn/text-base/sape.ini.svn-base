@@ -1,0 +1,9 @@
+#?ini charset="iso-8859-1"?
+
+[sape]
+sape_user=40900093db871ee94d5c69e744184156
+sape_charset=UTF-8
+sape_links_defaultCount=3
+sape_context_defaultCount=10
+sape_force_show_code=false
+sape_debug=false
