@@ -9,6 +9,7 @@ ActiveExtensions[]=ezvideoflv
 ActiveExtensions[]=ngopengraph
 ActiveExtensions[]=sape
 ActiveExtensions[]=yrss
+ActiveExtensions[]=podfm
 
 [Session]
 SessionNameHandler=custom
