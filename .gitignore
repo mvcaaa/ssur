@@ -4,9 +4,6 @@ settings/*/site.ini.append.php
 *\site.ini.append.php
 settings\*\site.ini.append.php
 .idea
-<<<<<<< HEAD
 gitflow
-=======
 *.bak
-
->>>>>>> ffb2bd9
+*~
