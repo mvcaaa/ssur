@@ -94,7 +94,7 @@
                    {* attribute_view_gui attribute=$node.object.data_map.left_column *}
 <h1 class="column-a-head"><a href="{$razdel.url_alias|ezurl(no)}">Мировая повестка</a></h1>
 
-{foreach $list_items as $child max $limit}
+{foreach $list_items as $child offset 1 max $limit}
 	{node_view_gui view=frontpage content_node=$child}
 {/foreach}
 
