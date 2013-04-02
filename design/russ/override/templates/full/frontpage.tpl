@@ -93,21 +93,8 @@
 			<!-- Left Content: START -->
                    {* attribute_view_gui attribute=$node.object.data_map.left_column *}
 <h1 class="column-a-head"><a href="{$razdel.url_alias|ezurl(no)}">Мировая повестка</a></h1>
-{foreach $list_items as $child offset 1 max 3}
-	{node_view_gui view=frontpage content_node=$child}
-{/foreach}
 
-<!-- Comics Start -->
-{*** COMICS ***}
-{def $comics_item=$node.data_map.comics.content}
-{node_view_gui view=frontpage content_node=$comics_item.main_node image_class=listitem}
-{*** COMICS ENDS ***}
-
-{*** VIDEO ***}
-{def $video_item=$node.data_map.video.content}
-         {node_view_gui view=frontpage content_node=$video_item.main_node image_class=listitem}
-{*** VIDEO ENDS ***}
-{foreach $list_items as $child offset 4 max $limit}
+{foreach $list_items as $child max $limit}
 	{node_view_gui view=frontpage content_node=$child}
 {/foreach}
 
@@ -124,10 +111,10 @@
 	{node_view_gui view=frontpage content_node=$child}
 {/foreach}
 
-{foreach $list3_items as $child max $limit3(dec|1)}
-	{node_view_gui view=frontpage content_node=$child}
-{/foreach}
-
+<!-- Video Start -->
+{def $video_item=$node.data_map.video.content}
+         {node_view_gui view=frontpage content_node=$video_item.main_node image_class=listitem}
+<!-- Video End -->
 
 {foreach $list2_items as $child offset 4 max $limit2(dec|2)}
 	{node_view_gui view=frontpage content_node=$child}

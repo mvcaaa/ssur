@@ -2,6 +2,7 @@
  Articles on Morda in NEWS Column, derived from 'Article - Line view'
  for video, uses node
 *}
+<!-- Video itself -->
 {default image_class=articleimage}
 <div class="content-view-frontpage float-break" id="frontpage-video">
 	<div class="class-article">
