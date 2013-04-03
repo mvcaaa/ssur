@@ -6,7 +6,7 @@
 	{/case} 
 
 	{case match='front'}
-        {def $size_width=357 $size_height=286}
+        {def $size_width=358 $size_height=286}
     {/case}
 
 	{case}
