@@ -6,12 +6,12 @@
 	{/case} 
 
 	{case match='front'}
-		{def $size_width=390 $size_height=313}
-	{/case} 
+        {def $size_width=357 $size_height=286}
+    {/case}
 
 	{case}
-		{def $size_width=360 $size_height=300}
-	{/case} 
+         {def $size_width=360 $size_height=300}
+	{/case}
 {/switch}
 <object width="{$size_width}" height="{$size_height}">
     <param name="movie" value="http://www.youtube.com/v/{$content}"></param>
