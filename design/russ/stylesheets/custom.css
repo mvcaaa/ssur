@@ -357,5 +357,6 @@ div.adblock .OzonRev_itemList {
 .column-d-head{ font-family: Arial; font-size: 18px; border-bottom: 3px double black; padding-bottom: 10px; text-align: center; }
 
 #frontpage-video p{ text-align: left; }
+#frontpage-video object {text-align: center; padding: 0px; margin-bottom: 10px; }
 
 #book .attribute-image{ border: 0px; float: left; clear: none; margin: 3px 7px 0px 0px; } 
